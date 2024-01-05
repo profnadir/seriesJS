@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+    <link rel="stylesheet" href="at6.css">
+   
+ </head>
+<body > 
+
+    <form >
+        <table >
+            <tr>
+                <td class="bleu" colspan="4" ><input type="text" size="30" id="aff" readonly autofocus> </td>
+            </tr>
+            <tr>
+                <td  ><input type="button" value=" 7 " onclick="Ajouter('7')"></td>
+                <td  ><input type="button" value=" 8 " onclick="Ajouter('8')"></td>
+                <td  ><input type="button" value=" 9 " onclick="Ajouter('9')"></td>
+                <td class="jaune" ><input type="button" value=" + " onclick="Ajouter('+')"> </td>
+            </tr>
+            <tr>
+                <td ><input type="button" value=" 4 " onclick="Ajouter('4')"></td>
+                <td ><input type="button" value=" 5 " onclick="Ajouter('5')"></td>
+                <td ><input type="button" value=" 6 " onclick="Ajouter('6')"></td>
+                <td class="jaune" ><input type="button" value=" - " onclick="Ajouter('-')"></td>
+            </tr>
+            <tr>
+                <td ><input type="button" value=" 1 " onclick="Ajouter('1')"></td>
+                <td ><input type="button" value=" 2 " onclick="Ajouter('2')"></td>
+                <td ><input type="button" value=" 3 " onclick="Ajouter('3')"></td>
+                <td class="jaune"><input type="button" value=" * " onclick="Ajouter('*')"></td>
+            </tr>
+            <tr>
+                <td ><input type="button" value=" 0 " onclick="Ajouter('0')"></td>
+                <td ><input type="button" value=" , " onclick="Ajouter('.')"></td>
+                <td  class="jaune"><input  type="button" value=" = " onclick="Resultat()"> </td>
+                <td  class="jaune"><input  type="button" value=" / " onclick="Ajouter('/')"> </td>
+            </tr>
+            <tr>
+                <td class="vert" ><input type="button" value=" &#8730; "  onclick="Calculer('sqrt')"> </td>
+                <td class="vert"><input type="button" value=" &#8519; "  onclick="Calculer('exp')"> </td>
+                <td class="vert"><input type="button" value=" &#13266; " onclick="Calculer('log')"> </td>
+                <td class="rouge"><input type="button" value=" C "       onclick="Effacer()"> </td>
+              
+            </tr>
+           
+        </table>
+    </form>
+    
+    
+    <script src="at6.js"></script>
+ 
+   
+</body>
+</html>
