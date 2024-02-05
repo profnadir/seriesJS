@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CRUD des etudiants</h1>
+    <div id="addEtudiant">
+        <input type="text" id="code" placeholder="code"> <br> 
+        <input type="text" id="nom" placeholder="nom"> <br>
+        <input type="text" id="prenom" placeholder="prenom"> <br>
+        <input type="text" id="semestre" placeholder="semestre"> <br>
+        <input type="text" id="filiere" placeholder="filiere"> <br>
+        <button onclick="ajouter()">Ajouter</button>
+        <button onclick="cacherForm()">Annuler</button>
+    </div>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Code</th>
+                <th>Nom</th>
+                <th>prenom</th>
+                <th>Semestre</th>
+                <th>Filiere</th>
+            </tr>
+        </thead>
+        <tbody id="list">
+            <tr onclick="selected(this)">
+                <td>3</td>
+                <td>John</td>
+                <td>Doe</td>
+                <td>S6</td>
+                <td>Math</td>
+            </tr>
+            <tr onclick="selected(this)">
+                <td>2</td>
+                <td>Jane</td>
+                <td>Doe</td>
+                <td>S2</td>
+                <td>Info</td>
+            </tr>
+        </tbody>
+    </table>
+    <button onclick="afficherForm()">Ajouter</button>
+    <button onclick="supprimer()">Supprimer</button>
+
+    <script src="index.js"></script>
+</body>
+</html>
