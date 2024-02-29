@@ -1,0 +1,23 @@
+form{
+    margin-top: 100px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+fieldset {
+    background-color: aliceblue;
+    margin-bottom: 10px;
+}
+
+legend{
+    background-color: black;
+    color: aliceblue;
+    padding: 5px 20px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
